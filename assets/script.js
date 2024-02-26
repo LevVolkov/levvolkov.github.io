@@ -10,7 +10,11 @@ jQuery(document).ready(function() {
   };
 	App.frame();
   
-  jQuery('canvas#ourCanvas').on('click', function(event) {
+  // Убираем отступы
+  jQuery('body').css('margin', '0');
+  jQuery('html').css('overflow', 'hidden');
+	
+	jQuery('canvas#ourCanvas').on('click', function(event) {
     App.hasUserClicked = !App.hasUserClicked;
   });
   
