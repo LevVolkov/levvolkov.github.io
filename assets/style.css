@@ -139,12 +139,6 @@ table {
 
 /* BODY HTML INTRO _______________________________________________________________________________________________________________________________________________________________________*/
 
-
-
-
-
-
-
 * {
   -webkit-box-sizing: border-box; /* Устанавливает box-sizing на border-box для браузеров Webkit */
   -moz-box-sizing: border-box; /* Устанавливает box-sizing на border-box для браузеров Mozilla */
@@ -159,11 +153,10 @@ html, body {
 
 body {
   background: #000010; /* Устанавливает фоновый цвет на черный */
-  /*font-family: 'Montserrat', sans-serif; /* Устанавливает шрифт на Montserrat */
+  font-family: 'Montserrat', sans-serif; /* Устанавливает шрифт на Montserrat */
   color: #fff; /* Устанавливает цвет текста на белый */
   line-height: 1.3; /* Устанавливает высоту строки на 1.3 */
   -webkit-font-smoothing: antialiased; /* Устанавливает сглаживание шрифта на антиалиасинг */
- font-family: "Outline";
  }
 
 .intro {
@@ -184,7 +177,7 @@ body {
  @font-face {
    /*шрифт*/
   font-family: "Outline";
-  src: url("Kumar_One_Outline/Kum.ttf") format('truetype');
+  src: url("Kumar_One_Outline/Kum.ttf") format("truetype");
 }
 
   h2 {
@@ -195,6 +188,7 @@ body {
 
 h2 {
   text-transform: uppercase; /* Устанавливает текст в верхний регистр */
+  font-family: "Outline";
   /*font-family: 'cursive'; /* Устанавливает семейство шрифта на 'cursive' */
   font-weight: 10; /* Устанавливает вес шрифта на 10 */
   font-size: 70px; /* Измените размер шрифта на 60 пикселей */
