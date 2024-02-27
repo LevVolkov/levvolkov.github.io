@@ -140,12 +140,12 @@ table {
 /* BODY HTML INTRO _______________________________________________________________________________________________________________________________________________________________________*/
 
 @font-face {/*шрифт*/
-  font-family: 'Outline';
-  src: url('assets/kum.ttf') format('truetype');
+  font-family: "Outline";
+  src: url("assets/kum.ttf") format('truetype');
 }
 
 h2 {
-  font-family: 'Outline';
+  font-family: "Outline";
 }
 
 
@@ -168,7 +168,7 @@ body {
   color: #fff; /* Устанавливает цвет текста на белый */
   line-height: 1.3; /* Устанавливает высоту строки на 1.3 */
   -webkit-font-smoothing: antialiased; /* Устанавливает сглаживание шрифта на антиалиасинг */
- font-family: 'Outline';
+ font-family: "Outline";
  }
 
 .intro {
