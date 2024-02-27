@@ -141,7 +141,7 @@ table {
 
 @font-face {/*шрифт*/
   font-family: "Outline";
-  src: url("assets/kum.ttf") format('truetype');
+  src: url("assets/Kumar_One_Outline/Kum.ttf") format('truetype');
 }
 
 h2 {
