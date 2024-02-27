@@ -162,7 +162,7 @@ body {
 .intro {
   position: absolute; /* Устанавливает позиционирование элемента #intro на абсолютное */
   left: 50%; /* Устанавливает левый отступ на 0 для элемента #intro */
-  top: 50%; /* Устанавливает верхний отступ на 50% для элемента #intro */
+  top: 45%; /* Устанавливает верхний отступ на 50% для элемента #intro */
   padding: 0 10px; /* Добавляет отступы слева и справа по 10px для элемента #intro */
   text-align: center; /* Выравнивает текст по центру для элемента #intro */
   transform: translate(-50%, -50%);
@@ -174,7 +174,7 @@ body {
   height: calc(100vh - 600px); /* Здесь 200px - это высота других элементов на странице, которую вы хотите вычесть */
 }
 
- @font-face { /* Устанвливает загруженный шрифт "Kumar_One_Outline"*/
+ @font-face { /* Устанвливает загруженный шрифт "Kumar One Outline" ("Outline") */
   font-family: "Outline";
   src: url("Kumar_One_Outline/Kum.ttf") format("truetype");
 }
@@ -183,16 +183,16 @@ body {
 
 .selector h2 {
   font-family: 'Outline';
-  font-size: 44px;
+  font-size: 44px;/*Размер шрифта*/
 }
 
 h2 {
   text-transform: uppercase; /* Устанавливает текст в верхний регистр */
-  font-family: "Outline"; /* Устанавливает семейство шрифта на 'Outline' */
-  font-weight: 10; /* Устанавливает вес шрифта на 10 */
-  font-size: 50px; /* Измените размер шрифта на 60 пикселей */
-  stroke-width: 58px; /* Устанавливает толщину штриха на 68 пикселей */
-  color: #ffffff; /* Устанавливает цвет текста на белый */
+  font-family: "Outline"; /* Семейство шрифта на 'Outline' */
+  font-weight: 10; /* Вес шрифта на 10 */
+  font-size: 50px; /* Размер шрифта 60 пикселей */
+  stroke-width: 68px; /* Толщинф штриха  68 пикселей */
+  color: #ffffff; /* Цвет текста белый */
   text-align: center; /* Выравнивает текст по центру */
   margin-bottom: 20px; /* Добавляет отступ снизу */
   text-transform: capitalize; /*свойство преобразует весь текст в нижний регистр, за исключением первой буквы каждого слова, которая остается в верхнем регистре*/
