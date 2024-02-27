@@ -139,6 +139,17 @@ table {
 
 /* BODY HTML INTRO _______________________________________________________________________________________________________________________________________________________________________*/
 
+@font-face {/*шрифт*/
+  font-family: 'Outline';
+  src: url('assets/Kum.ttf') format('truetype');
+}
+
+h2 {
+  font-family: 'Outline', sans-serif;
+}
+
+
+
 * {
   -webkit-box-sizing: border-box; /* Устанавливает box-sizing на border-box для браузеров Webkit */
   -moz-box-sizing: border-box; /* Устанавливает box-sizing на border-box для браузеров Mozilla */
@@ -157,7 +168,7 @@ body {
   color: #fff; /* Устанавливает цвет текста на белый */
   line-height: 1.3; /* Устанавливает высоту строки на 1.3 */
   -webkit-font-smoothing: antialiased; /* Устанавливает сглаживание шрифта на антиалиасинг */
-}
+ }
 
 .intro {
   position: absolute; /* Устанавливает позиционирование элемента #intro на абсолютное */
