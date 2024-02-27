@@ -164,10 +164,11 @@ html, body {
 
 body {
   background: #000010; /* Устанавливает фоновый цвет на черный */
-  font-family: 'Montserrat', sans-serif; /* Устанавливает шрифт на Montserrat */
+  /*font-family: 'Montserrat', sans-serif; /* Устанавливает шрифт на Montserrat */
   color: #fff; /* Устанавливает цвет текста на белый */
   line-height: 1.3; /* Устанавливает высоту строки на 1.3 */
   -webkit-font-smoothing: antialiased; /* Устанавливает сглаживание шрифта на антиалиасинг */
+ font-family: 'Outline';
  }
 
 .intro {
