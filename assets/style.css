@@ -179,7 +179,7 @@ body {
   src: url("Kumar_One_Outline/Kum.ttf") format("truetype");
 }
 
-.selector {
+.selector h2 {
   font-family: 'Outline';
   font-size: 34px;
 }
