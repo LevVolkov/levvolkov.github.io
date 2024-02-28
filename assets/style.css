@@ -184,7 +184,7 @@ body {
 .selector h2 {
   font-family: 'Outline';
   font-size: 44px;/*Размер шрифта*/
-  font-weight:lighter;
+  font-weight: 100;
 }
 
 h2 {
