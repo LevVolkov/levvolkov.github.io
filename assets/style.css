@@ -189,7 +189,7 @@ body {
 h2 {
   text-transform: uppercase; /* Устанавливает текст в верхний регистр */
   font-family: "Outline"; /* Семейство шрифта на 'Outline' */
-  font-weight: 100; /* Вес шрифта на 10 */
+  font-weight: 10; /* Вес шрифта на 10 */
   font-size: 50px; /* Размер шрифта 60 пикселей */
   stroke-width: 68px; /* Толщинф штриха  68 пикселей */
   color: #ffffff; /* Цвет текста белый */
