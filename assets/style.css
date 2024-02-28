@@ -184,14 +184,12 @@ body {
 .selector h2 {
   font-family: 'Outline';
   font-size: 44px;/*Размер шрифта*/
-  font-weight: 100;
-  stroke-width: 68px;
-}
+  }
 
 h2 {
   text-transform: uppercase; /* Устанавливает текст в верхний регистр */
   font-family: "Outline"; /* Семейство шрифта на 'Outline' */
-  font-weight: 10; /* Вес шрифта на 10 */
+  font-weight: 100; /* Вес шрифта на 10 */
   font-size: 50px; /* Размер шрифта 60 пикселей */
   stroke-width: 68px; /* Толщинф штриха  68 пикселей */
   color: #ffffff; /* Цвет текста белый */
