@@ -185,6 +185,7 @@ body {
   font-family: 'Outline';
   font-size: 44px;/*Размер шрифта*/
   font-weight: 100;
+  stroke-width: 68px;
 }
 
 h2 {
