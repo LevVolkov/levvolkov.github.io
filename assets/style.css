@@ -176,7 +176,7 @@ body {
 
  @font-face { /* Устанвливает загруженный шрифт "Kumar One Outline" ("Outline") */
   font-family: "Outline";
-  src: url("Kumar_One_Outline/Kum.ttf") format("truetype");
+  src: url("KumarOneOutline-Regular.ttf") format("truetype");
 }
 
 /* СТИЛИ ДЛЯ ТЕГА h2 ________________________________________________________________________________________________________________________________________________________________________________________________*/
