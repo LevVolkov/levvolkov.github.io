@@ -35,7 +35,7 @@ a {
   position: relative; /* Позиционирование относительно родительского элемента */
   z-index: 1; /* Позиция элемента по оси Z */
   border-radius: 25%; /* Радиус скругления углов кнопки */
-  font-size: 0.75rem; /* Размер шрифта заголовка иконки 0.75 */
+  font-size: 0.85rem; /* Размер шрифта заголовка иконки 0.75 */
   justify-content: center; /* Свойство `justify-content: center;` центрирует содержимое кнопки по горизонтали. */
   align-items: center; /* Свойство `align-items: center;` центрирует содержимое кнопки по вертикали. */
   flex-direction: row; /*делает кнопки горизонтальными*/
@@ -59,10 +59,6 @@ a {
   vertical-align: baseline; /* Устанавливает выравнивание по базовой линии для всех элементов */
 }
 
-.button-container:hover .icon_image {
-  display: none; /* Скрытие иконки при наведении */
-}
-
 .button-container:hover .icon_title {
   display: initial; /* Отображение заголовка иконки при наведении */
 }
@@ -70,6 +66,11 @@ a {
 .button-container .icon_title {
   display: none; /* Скрытие заголовка иконки по умолчанию */ 
 }
+
+.button-container:hover .icon_image {
+  display: none; /* Скрытие иконки при наведении */
+}
+
 /* BODY HTML INTRO _______________________________________________________________________________________________________________________________________________________________________*/
 
 * {
@@ -123,6 +124,15 @@ h2 {
   text-align: center; /* Выравнивает текст по центру */
   margin-bottom: 20px; /* Добавляет отступ снизу */
   text-transform: capitalize; /*свойство преобразует весь текст в нижний регистр, за исключением первой буквы каждого слова, которая остается в верхнем регистре*/
+  text-shadow: 0 0 0.25px #FFFFFF, /* Обводка */
+               0 0 0.5px #FFFFFF, 
+               0 0 0.75px #FFFFFF, 
+               0 0 1px #FFFFFF, 
+               0 0 1.25px #FFFFFF, 
+               0 0 1.5px #FFFFFF, 
+               0 0 1.75px #FFFFFF,
+               0 0 2px #FFFFFF,
+               0 0 2.25px #FFFFFF;
 }
 
 
