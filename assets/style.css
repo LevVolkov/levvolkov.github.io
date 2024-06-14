@@ -1,0 +1,290 @@
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+.content {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Oтключает все события мыши (например, клики, перетаскивание) для элемента */
+  overflow: hidden;
+  position: absolute;
+}
+
+#myCanvas {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;/* Устанавливаем z-index больше, чтобы покрытие было сверху */
+  position: fixed;
+}
+
+/* СТИЛИ ДЛЯ ИКОНОК-КНОПОК СОЦСЕТЕЙ _________________________________________________________________________________________________________________________________________________________________________________________*/
+
+/* Стили для блока социальных ссылок */
+.social-links {
+  display: flex; /* Выравнивает элементы по центру */
+  justify-content: center; /* Выравниваем элементы по горизонтали */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  position: absolute;
+  margin-top: 25vh;
+  font-weight: 800;
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+/* Стили для контейнера кнопки */
+.button-container {
+  height: 6rem; /* Высота контейнера */
+  width: 6rem; /* Ширина контейнера */
+  margin: 5px; /*0 0.1rem; /* Отступы по горизонтали */
+  flex-wrap: wrap; /* позволяет элементам внутри контейнера переноситься на новую строку, если они не помещаются на одной строке*/
+  display: flex;
+  justify-content: center; /* Свойство `justify-content: center;` центрирует содержимое контейнера по горизонтали. */
+  align-items: center; /* Свойство `align-items: center;` центрирует содержимое контейнера по вертикали. */
+}
+
+a {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: #000000; /* Устанавливает цвет текста на черный */
+}
+
+.button {
+  transition: color 0.5s linear; /* Плавный переход цвета при изменении */
+  height: 4.5rem; /* Высота кнопки */
+  width: 4.5rem; /* Ширина кнопки */
+  color: #000000; /* Цвет текста кнопки */
+  display: flex;/*table-cell; /* Отображать кнопку в виде ячейки таблицы */
+  vertical-align: middle; /* Выравнивать по вертикали */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Убрать подчеркивание ссылки */
+  position: relative; /* Позиционирование относительно родительского элемента */
+  z-index: 1; /* Позиция элемента по оси Z */
+  border-radius: 25%; /* Радиус скругления углов кнопки */
+  font-size: 1rem; /* Размер шрифта заголовка иконки 0.75 */
+  justify-content: center; /* Свойство `justify-content: center;` центрирует содержимое кнопки по горизонтали. */
+  align-items: center; /* Свойство `align-items: center;` центрирует содержимое кнопки по вертикали. */
+  flex-direction: row; /*делает кнопки горизонтальными*/
+  margin: 0.5rem; /* добавили свойство margin: 0.5rem; для класса .button, чтобы добавить небольшой отступ между кнопками */
+}
+
+.button {    /* Обводка текста иконок*/
+  text-shadow: 0 0 0.25px #00FFFF,
+               0 0 0.5px #00FFFF,
+               0 0 0.75px #00FFFF,
+               0 0 1px #FFFFFF,
+               0 0 1.25px #FFFFFF,
+               0 0 1.5px #FFFFFF,
+               0 0 1.75px #FFFFFF;
+}
+
+.button:hover {
+  background-color: transparent; /* Прозрачность фона при наведении   ${e=>{let{$theme:t}=e;return t.shadowColor}};*/
+  box-shadow: 0 0 0.75rem 0.75rem rgba(95, 158, 160, 0.25); /* Тень кнопки  rgba(128, 128, 128, 0.25)*/
+}
+
+/* Класс .icon_title используется для заголовка иконки. 
+    Он делает текст заголовка по центру. */
+.icon_title {
+  text-align: center; /* Свойство `text-align: center;` центрирует текст заголовка. */
+  margin: 0; /* Устанавливает отступы на 0 для всех элементов */
+  padding: 0; /* Устанавливает отступы на 0 для всех элементов */
+  border: 0; /* Устанавливает границы на 0 для всех элементов */
+  font-size: 100%; /* Устанавливает размер шрифта на 100% для всех элементов */
+  vertical-align: baseline; /* Устанавливает выравнивание по базовой линии для всех элементов */
+}
+    
+.button-container:hover .icon_title {
+  display: initial; /* Отображение заголовка иконки при наведении */
+}
+    
+.button-container .icon_title {
+  display: none; /* Скрытие заголовка иконки по умолчанию */ 
+}
+    
+.button-container:hover .icon_image {
+  display: none; /* Скрытие иконки при наведении */
+}
+
+#telegram, #gmail, #discord, #github { /* Обводка иконок */
+  filter:  drop-shadow(0 0 1px #00FFFF) drop-shadow(0 0 1px #00FFFF);
+}
+
+/* Указываем задержку для всех иконок в social-links */
+.social-links  {
+  opacity: 0; 
+  animation: fadeIn 2s forwards;
+  animation-delay: 3.6s; 
+}
+
+/* Указываем эффект задержки для каждой иконки */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* СТИЛИ ДЛЯ ТЕГА h1 ________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+/* Указываем задержку для текста h1 */
+[class^="letter"] {
+  -webkit-transition: opacity 3s ease;
+  -moz-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+}
+
+.letter-0 {
+  transition-delay: 0.2s;
+}
+
+.letter-1 {
+  transition-delay: 0.4s;
+}
+
+.letter-2 {
+  transition-delay: 0.6s;
+}
+
+.letter-3 {
+  transition-delay: 0.8s;
+}
+
+.letter-4 {
+  transition-delay: 1.0s;
+}
+
+.letter-5 {
+  transition-delay: 1.2s;
+}
+
+.letter-6 {
+  transition-delay: 1.4s;
+}
+
+.letter-7 {
+  transition-delay: 1.6s;
+}
+
+.letter-8 {
+  transition-delay: 1.8s;
+}
+
+.letter-9 {
+  transition-delay: 2.0s;
+}
+
+.letter-10 {
+  transition-delay: 2.2s;
+}
+
+.letter-11 {
+  transition-delay: 2.4s;
+}
+
+.letter-12 {
+  transition-delay: 2.6s;
+}
+
+.letter-13 {
+  transition-delay: 2.8s;
+}
+
+.letter-14 {
+  transition-delay: 3.0s;
+}
+
+.letter-15 {
+  transition-delay: 3.2s;
+}
+
+.letter-16 {
+  transition-delay: 3.4s;
+}
+
+h1.transition-in {
+  visibility: visible;
+}
+
+h1 [class^="letter"] {
+  opacity: 0;
+}
+
+h1.transition-in [class^="letter"] {
+  opacity: 1;
+}
+
+/* Шрифт */
+@font-face {
+  font-family: 'Barrio';
+  font-style: normal;
+  font-weight: 400;
+  /*src: url('https://fonts.googleapis.com/css?family=Barrio');*/
+  src: url('Barrio.woff2') format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+#h1 {
+  z-index: 2;
+  position: absolute; /* Aбсолютное позиционирование для элемента относительно его ближайшего родительского элемента */
+  pointer-events: none; /* Oтключает все события мыши (например, клики, перетаскивание) для элемента */
+  mix-blend-mode: difference; /* Эффект. Cвойство смешивает цвета пикселей элемента с цветами пикселей под ним, используя режим наложения "Разница" */
+  font-family: 'Barrio', cursive; /* Семейство шрифта на 'Limpopo' */
+  font-weight: 400; /* Вес шрифта на 10 */
+  font-size: 75px; /* Размер шрифта 57 пикселей */
+  stroke-width: 68px; /* Толщинф штриха  68 пикселей */
+  color: #000000; /* Цвет текста  */
+  text-align: center; /* Выравнивает текст по центру */
+  margin-bottom: 20vh; /* Добавляет отступ снизу */
+  letter-spacing: 0.10em; /* Отступы между буквами */
+  text-shadow: 
+  0 0 0.25px #00FFFF, /* Обводка */
+  0 0 0.5px #00FFFF, 
+  0 0 0.75px #00FFFF, 
+  0 0 1px #00FFFF, 
+  0 0 1.25px #00FFFF, 
+  0 0 1.5px #00FFFF, 
+  0 0 1.75px #00FFFF,
+  0 0 2px #00FFFF,
+  0 0 2.25px #00FFFF;
+}
+
+/* Убирает мерцание заголовка h1, при загрузке страницы */
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  #h1 {
+    font-size: 66px; 
+  }
+
+  .social-links {
+    width: 36px; 
+    height: 36px;
+  }
+}
